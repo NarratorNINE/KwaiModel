@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 标题文字样式 -->
+    <style name="AlertDialog.Title" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <!-- 正文文字样式 -->
+    <style name="AlertDialog.Body" parent="MaterialAlertDialog.Material3.Body.Text">
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <!-- 自定义 AlertDialog 样式（带动画、圆角背景、尺寸控制） -->
+    <style name="CustomDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/AlertDialog.Title</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/AlertDialog.Body</item>
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_fade_in</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="NoShadowFAB" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="elevation">0dp</item>
+    </style>
+
+</resources>

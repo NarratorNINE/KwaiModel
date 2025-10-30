@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_img"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_img"
+        android:supportsRtl="true"
+        tools:targetApi="31"
+        android:theme="@style/Theme.XposedModule">
+
+        <!-- MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 添加这行：AboutActivity 声明 -->
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+
+        <!-- Xposed 相关配置 -->
+        <meta-data
+            android:name="xp"
+            android:value="true" />
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="一个快手防撤回模块" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82" />
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/xposedscope"/>
+    </application>
+</manifest>

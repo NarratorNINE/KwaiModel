@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorSurfaceContainerHigh">#FFF2F6</color>
+    <color name="colorOnSurface">#1D1B20</color>
+    <!-- 浅色主题 -->
+    <color name="md_theme_light_primary">#6750A4</color>
+    <color name="md_theme_light_surface_container">#F7F2FA</color>
+    <!-- 深色主题 -->
+    <color name="md_theme_dark_primary">#D0BCFF</color>
+    <color name="md_theme_dark_surface_container">#1C1B1F</color>
+</resources>

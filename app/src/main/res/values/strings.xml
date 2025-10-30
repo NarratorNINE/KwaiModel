@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KwaiModel</string>
+    <string name="module_settings_title">模块功能开关</string>
+    <string name="enable_module_text">启用模块功能</string>
+    <string name="advanced_settings">高级设置</string>
+    <string name="module_activated">模块已激活</string>
+    <string name="about_title">关于模块</string>
+    <string name="about_message">版本: 1.0\n作者: NINE\n描述: 一个快手防撤回模块</string>
+</resources>
